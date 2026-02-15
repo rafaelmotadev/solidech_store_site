@@ -245,7 +245,7 @@
     <!-- 11. Contato -->
     <section id="contato" class="section section-alt">
         <div class="container">
-            <h2 class="text-center">Fale Conosco</h2>
+            <h2 class="text-center" style="margin-bottom: var(--space-2xl);">Fale Conosco</h2>
             <div class="grid grid-2">
                 <div>
                     <h4>Informações</h4>
@@ -262,20 +262,13 @@
                     </div>
                 </div>
                 <div>
-                    <h4>Envie uma mensagem</h4>
-                    <form id="contact-form" action="#" method="POST">
-                        <!-- Honeypot Field (Anti-Spam) -->
-                        <div style="display: none;">
-                            <label for="website-bot">Website</label>
-                            <input type="text" id="website-bot" name="website-bot" tabindex="-1" autocomplete="off">
-                        </div>
-
-                        <input type="text" placeholder="Nome" class="form-input" required minlength="2" maxlength="100"
-                            pattern="[A-Za-zÀ-ÿ\s]+" title="Apenas letras e espaços permitidos">
-                        <input type="email" placeholder="Email" class="form-input" required maxlength="100">
-                        <textarea placeholder="Mensagem" class="form-input" required maxlength="500"></textarea>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
+                    <h4>Envie um Email</h4>
+                    <p>Tem alguma dúvida sobre nossos produtos ou entregas? Envie um email e responderemos o mais breve
+                        possível.</p>
+                    <a href="mailto:solidechs@gmail.com?subject=Contato%20pelo%20site%20Solidech%20Store&body=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20produtos%20da%20Solidech%20Store."
+                        class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Enviar Email
+                    </a>
                 </div>
             </div>
         </div>

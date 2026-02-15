@@ -99,36 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Secure Form Handling
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            // 1. Honeypot Security Check (Anti-Bot)
-            const honeypot = document.getElementById('website-bot');
-            if (honeypot && honeypot.value) {
-                console.warn('Bot detected by honeypot.');
-                return; // Silent rejection
-            }
-
-            // 2. Button State Feedback
-            const btn = contactForm.querySelector('button[type="submit"]');
-            const originalText = btn.innerText;
-
-            btn.innerText = 'Enviando...';
-            btn.disabled = true;
-
-            // 3. Simulate secure submission (replace with actual backend call)
-            setTimeout(() => {
-                alert('Mensagem enviada com sucesso! (Simulação segura)');
-                contactForm.reset();
-                btn.innerText = originalText;
-                btn.disabled = false;
-            }, 1000);
-        });
-    }
-
     // Initial setup for animation elements
-    console.log('Solidech Store - Site Ready & Secured');
+    console.log('Solidech Store - Site Ready');
 });
